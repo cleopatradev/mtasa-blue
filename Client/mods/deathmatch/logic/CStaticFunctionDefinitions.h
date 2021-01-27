@@ -818,4 +818,7 @@ public:
     static const char*   GetOperatingSystemName();
     static const char*   GetVersionBuildTag();
     static SString       GetVersionSortable();
+
+    // Machine ID
+    static bool          GetMachineID(SString& state);
 };

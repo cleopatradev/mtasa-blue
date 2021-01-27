@@ -110,6 +110,7 @@ public:
     LUA_DECLARE(AddDebugHook);
     LUA_DECLARE(RemoveDebugHook);
     LUA_DECLARE(GetVersion);
+    LUA_DECLARE(GetMachineID);
 
     // L10n
     LUA_DECLARE(GetLocalization);

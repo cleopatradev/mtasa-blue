@@ -229,6 +229,7 @@ void CLuaManager::LoadCFunctions()
         {"getDevelopmentMode", CLuaFunctionDefs::GetDevelopmentMode},
         {"addDebugHook", CLuaFunctionDefs::AddDebugHook},
         {"removeDebugHook", CLuaFunctionDefs::RemoveDebugHook},
+        {"getMachineID", CLuaFunctionDefs::GetMachineID},
 
         // Version functions
         {"getVersion", CLuaFunctionDefs::GetVersion},

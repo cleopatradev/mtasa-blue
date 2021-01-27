@@ -452,3 +452,11 @@ int CLuaFunctionDefs::RemoveDebugHook(lua_State* luaVM)
     lua_pushboolean(luaVM, false);
     return 1;
 }
+
+int CLuaFunctionDefs::GetMachineID(lua_State* luaVM)
+{
+    SString machineID;
+    CStaticFunctionDefinitions::GetMachineID(machineID);
+    lua_pushstring(luaVM, machineID);
+    return 1;
+}

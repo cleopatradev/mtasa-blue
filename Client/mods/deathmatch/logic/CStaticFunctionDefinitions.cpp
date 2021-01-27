@@ -9960,3 +9960,12 @@ bool CStaticFunctionDefinitions::ResetSurfaceInfo(short sSurfaceID)
     }
     return false;
 }
+
+bool CStaticFunctionDefinitions::GetMachineID(SString& state)
+{
+    HW_PROFILE_INFO hwProfileInfo;
+    if (GetCurrentHwProfile(&hwProfileInfo))
+        state = hwProfileInfo.szHwProfileGuid;
+
+    return false;
+}
